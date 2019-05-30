@@ -4,7 +4,7 @@ ul{
 }
 
 body{
-    background-image: URL(dark_wood.png);
+    background-image: URL(email-pattern.png);
 }
 
 a{
@@ -20,7 +20,7 @@ a{
     font-weight: bold;
 }
 div{
-    background-color: #8E41D5;
+    background-color: rgb(255, 255, 255);
 
 }
 h3{

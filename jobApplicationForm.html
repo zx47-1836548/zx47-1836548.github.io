@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Job Application</title>
+    		<link rel="stylesheet" type="text/css" href="test.css" />
+		<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<h1 style="color:rgb(91, 21, 182);">Job Application</h1>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+    <fieldset>
+		<legend><h2 style="color:rgb(252, 187, 8);">Account</h2></legend>
+		<div class="field">
+            <label>Email:</label>
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+            <input type="password" name="password_r">
+        </div>
+        <input type="reset" value="Clear">
+    </fieldset>
+    
+    <fieldset>
+		<legend><h2 style="color:rgb(252, 187, 8);">Family information</h2></legend>
+		<div class="field">
+			<label>Guardian's full name</label> 
+			<input type="text" name="guardians_name">
+		</div>
+		<div class="field">
+			<label>Guardian's job</label> 
+			<input type="text" name="guardians_job">
+		</div>
+		<div class="field">
+			<label>Emergency contact</label> 
+			<input type="text" name="emergency_contact">
+        </div>
+        <input type="reset" value="Clear">
+	</fieldset>
+    
+	<fieldset>
+		<legend><h2 style="color:rgb(252, 187, 8);">Personal information</h2></legend>
+		<div class="field">
+			<label>Full Name:</label> 
+			<input type="text" name="name">
+        </div>
+        <div class="field">
+            <label>Date of Birth</label>
+            <select name="month">
+                <option value="" selected="true">Choose a Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">Apr</option>
+                <option value="may">May</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="aug">Aug</option>
+                <option value="sep">Sep</option>
+                <option value="oct">oct</option>
+                <option value="nov">Nov</option>
+                <option value="dec">Dec</option>
+            </select>
+            <input type="text" name="date" value="Please type the date">
+        </div>
+
+        <div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+            <label>State:</label> 
+            <input type:"text" name="state">
+		</div>
+		<div class="field">
+			<label>ZIP:</label> 
+			<input type="text" name="zip">
+        </div>
+        <input type="reset" value="Clear">
+	</fieldset>
+
+    <fieldset>
+		<legend><h2 style="color:rgb(252, 187, 8);">Avaliability</h2></legend>
+		<div class="field">
+			<label>Are you legally able to be employed in this country?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+        </div>
+        <input type="reset" value="Clear">
+	</fieldset>
+
+	<fieldset>
+		<legend><h2 style="color:rgb(252, 187, 8);">Personal Statement</h2></legend>
+		<div class="field">
+			<label>Why are you applying this job?</label><br>
+			<textarea name="why_apply" rows="6" cols="60"></textarea>
+        </div>
+        <input type="reset" value="Clear">
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
